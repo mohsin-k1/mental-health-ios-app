@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		30559E5B2D4971E5003EA6C7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 30559E5A2D4971E5003EA6C7 /* FirebaseAuth */; };
+		3073F2972D5526A000301238 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3073F2962D5526A000301238 /* FirebaseStorage */; };
+		3073F2992D5526C700301238 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3073F2982D5526C700301238 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		30B7DB872D4945600096A279 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30559E5B2D4971E5003EA6C7 /* FirebaseAuth in Frameworks */,
+				3073F2972D5526A000301238 /* FirebaseStorage in Frameworks */,
+				3073F2992D5526C700301238 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = Coursework2;
 			packageProductDependencies = (
+				30559E5A2D4971E5003EA6C7 /* FirebaseAuth */,
+				3073F2962D5526A000301238 /* FirebaseStorage */,
+				3073F2982D5526C700301238 /* FirebaseFirestore */,
 			);
 			productName = Coursework2;
 			productReference = 30B7DB762D49455D0096A279 /* Coursework2.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 30B7DB6D2D49455D0096A279;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				30559E592D4971E5003EA6C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 30B7DB772D49455D0096A279 /* Products */;
 			projectDirPath = "";
@@ -399,6 +414,8 @@
 				DEVELOPMENT_TEAM = W9GHU8Z389;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to save photos to your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +445,8 @@
 				DEVELOPMENT_TEAM = W9GHU8Z389;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to save photos to your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +577,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30559E592D4971E5003EA6C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30559E5A2D4971E5003EA6C7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30559E592D4971E5003EA6C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3073F2962D5526A000301238 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30559E592D4971E5003EA6C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3073F2982D5526C700301238 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30559E592D4971E5003EA6C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30B7DB6E2D49455D0096A279 /* Project object */;
 }
